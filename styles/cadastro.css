@@ -1,0 +1,111 @@
+
+body {
+    max-height: 100vh;
+    display: flex;
+    overflow-y: auto;
+    height: auto;
+}
+
+input,
+button{
+    padding: .45rem .5rem;
+    width: 300px;
+}
+
+input:focus {
+    outline: none;
+}
+
+header {
+    margin-bottom:.6rem;
+}
+
+.label {
+    font-size: 1rem;
+    font-family: var(--text-decoration);
+    color: var(--color-blackLigth);
+}
+
+.rigth-side {
+    background-image: url('/img/img-telaCadastro.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding: 3rem 11rem;
+}
+
+
+.left-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 11rem;
+}
+
+.title-form {
+    font-size: 1.3rem;
+    font-family: var(--text-decoration);
+    color: var(--color-blackLigth);
+    text-align: center;
+}
+
+
+.input-container {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-form {
+    color: var(--colorWhite);
+    background-color: var(--color-red);
+    font-family: var(--text-decoration);
+    border: 0;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+
+.span-requerid {
+    font-size: 1rem;
+    font-family: var(--font-text);
+    margin-top: .3rem;
+    color: var(--color-red);
+    display: none;
+}
+
+
+
+@media (max-width: 970px) {
+    body {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .rigth-side {
+        height: 100vh;
+        width: 100%;
+        padding: 16rem;
+        background-size: cover;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

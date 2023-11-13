@@ -1,0 +1,93 @@
+.header {
+    background-color: var(--color-blackLigth);
+    padding-inline: 16px;
+}
+
+.nav-bar {
+    max-width: 1200px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-items a {
+    color: var(--colorWhite);
+}
+
+.nav-items a:hover {
+    border-bottom: 1px solid var(--color-red);
+}
+
+.name-logo {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--colorWhite);
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    height: calc(100vh - 70px);
+
+}
+
+/* meni hambruguer para celular */
+.hamburguer {
+    border: none;
+    background: none;
+    border-top: 3px solid var(--colorWhite);
+    cursor: pointer;
+    display: none;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: var(--colorWhite);
+    margin-top: 5px;
+}
+
+@media (max-width: 750px) {
+    .hamburguer {
+        display: block;
+        z-index: 2;
+    }
+
+    .nav-items {
+        position: fixed;
+        top: -10px;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--color-blackLigth);
+        clip-path: circle(100px at 90% -15%);
+        transition: .8s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .nav-items a {
+        font-size: 1.8rem;
+    }
+
+    /* estilos ativos */
+    .nav-bar.active .nav-items {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+        z-index: 1;
+    }
+}

@@ -18,9 +18,10 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="js/scripts.js" defer></script>
     <script src="js/animation-bar.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/header.css" />
     <title>Speedy</title>
   </head>
   <body>
@@ -31,10 +32,9 @@
         </div>
         <button class="hamburguer"></button>
         <ul class="nav-items">
-          <li><a href="#">Empresa</a></li>
-          <li><a href="#">Alugueis</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Parceria</a></li>
+          <li><a href="index.html">Sobre nós</a></li>
+          <li><a href="alugueis.html">Alugueis</a></li>
+          <li><a href="parceria.html">Parceria</a></li>
         </ul>
       </nav>
     </header>
@@ -50,7 +50,11 @@
         <div data-aos="fade-left" data-aos-duration="1000">
           <p class="step-text">1- Quem Somos</p>
         </div>
-        <div class="text-container" data-aos="fade-right" data-aos-duration="1000">
+        <div
+          class="text-container"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <p class="text-sobre">
             Na SPEEDY, nós oferecemos mais do que aluguel de carros esportivos,
             nós oferecemos uma oportunidade de viver uma aventura sobre rodas.
@@ -61,10 +65,18 @@
       </section>
 
       <section class="history-section">
-        <div class="card-container" data-aos="fade-up-right" data-aos-duration="1000">
-          <div class="description" data-aos="fade-right" data-aos-duration="1000">
+        <div
+          class="card-container"
+          data-aos="fade-up-right"
+          data-aos-duration="1000"
+        >
+          <div
+            class="description"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <h1 class="desc-title">Fundação da empresa Speedy</h1>
-            <p class="desc-text">
+            <p class="desc-history">
               A nossa história teve início oficialmente em 2001, quando o
               primeiro CEO desta empresa teve uma ideia brilhante: alugar os
               seus carros antigos, verdadeiras relíquias, para amigos. Essa
@@ -77,24 +89,48 @@
         </div>
       </section>
 
-      <section class="desc-work">
-        <div  data-aos="fade-left" data-aos-duration="1000">
+      <section class="section-work">
+        <div data-aos="fade-left" data-aos-duration="1000">
           <p class="step-text">II - O que fazemos</p>
         </div>
         <div
           class="text-container"
           data-aos="fade-up"
-          data-aos-anchor-placement="bottom-bottom"
+          data-aos-anchor-placement="bottom-bottom" 
         >
-          <p class="text-work">
-            Nossa empresa se dedica ao aluguel de carros de luxo, proporcionando
-            uma experiência excepcional. Temos uma frota diversificada de
-            veículos de alta qualidade, de esportivos a sedans luxuosos,
-            atendendo a clientes que buscam luxo e desempenho.
-          </p>
-        </div>
-        <div class="btn-container"  data-aos="flip-left" data-aos-duration="1000">
-          <a href="#" class="btn-work">Clique e Alugue</a>
+          <div class="desc-work">
+            <h3 class="title-work">Empresa</h3>
+            <p class="text-work">
+              Nossa empresa se dedica ao aluguel de carros de luxo,
+              proporcionando uma experiência excepcional. Temos uma frota
+              diversificada de veículos de alta qualidade, de esportivos a
+              sedans luxuosos, atendendo a clientes que buscam luxo e
+              desempenho.
+            </p>
+            <div
+              class="btn-container"
+              data-aos="flip-left"
+              data-aos-duration="1300"
+            >
+              <a href="cadastro.html" class="btn-work">Clique e Alugue</a>
+            </div>
+          </div>
+          <div class="desc-work">
+            <h3 class="title-work">Parceria</h3>
+            <p class="text-work">
+              A Speedy é mais do que uma empresa de aluguel de carros. Ela é uma
+              parceira confiável para proprietários de veículos que desejam
+              compartilhar seus carros com outras pessoas, tornando o processo
+              de aluguel de automóveis mais simples e vantajoso para todos.
+            </p>
+            <div
+              class="btn-container"
+              data-aos="flip-left"
+              data-aos-duration="1300"
+            >
+              <a href="parceria.html" class="btn-work">Parceria</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>

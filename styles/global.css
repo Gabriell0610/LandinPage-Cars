@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+ul li {
+    list-style: none;
+    font-family: var(--text-decoration);
+}
+
+html {
+    overflow-x: hidden;
+}
+
+:root {
+    --font-text: 'Roboto', sans-serif;
+    --text-decoration: 'Spectral SC', serif;
+    --colorWhite: #fff;
+    --color-red: #df3020;
+    --color-redLigth: #cd3f32;
+    --color-blackLigth: #333;
+    --color-gray: #ccc;
+    --color-blackDark: rgb(29, 27, 27);
+}
+
