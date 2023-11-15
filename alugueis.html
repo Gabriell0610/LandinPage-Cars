@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,27 +17,217 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="js/scripts.js" defer></script>
-    <script src="js/animation-bar.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="styles/global.css">
+
+    <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/alugueis.css" />
+    <link rel="stylesheet" href="styles/footer.css">
+
     <title>Alugueis</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <nav class="nav-bar">
-          <div data-aos="fade-right" data-aos-duration="1000">
-            <h1 class="name-logo">Speedy</h1>
+      <nav class="nav-bar">
+        <div data-aos="fade-right" data-aos-duration="1000">
+          <h1 class="name-logo">Speedy</h1>
+        </div>
+        <button class="hamburguer"></button>
+        <ul class="nav-items">
+          <li><a href="index.html">Sobre nós</a></li>
+          <li><a href="alugueis.html">Alugueis</a></li>
+          <li><a href="parceria.html">Parceria</a></li>
+          <div class="icon-container">
+            <a href="cadastro.html">
+              <i class="fa-solid fa-user"></i>
+            </a>
           </div>
-          <button class="hamburguer"></button>
-          <ul class="nav-items">
-            <li><a href="index.html">Sobre nós</a></li>
-            <li><a href="alugueis.html">Alugueis</a></li>
-            <li><a href="parceria.html">Parceria</a></li>
-          </ul>
-        </nav>
+        </ul>
+      </nav>
     </header>
-    
-</body>
+
+    <main>
+      <header class="header-swipper">
+        <h2>Conheça a nossa frota</h2>
+        <p>As melhores condições para você reservar e aproveitar</p>
+      </header>
+      
+      <section>
+        <div class="slider">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+  
+            <!--Slide Image-->
+            <div class="slide first">
+              <img src="img/ferrari-red.avif" alt="carro-slide 1">
+            </div>
+            <div class="slide">
+              <img src="img/audi-car-swipper6.avif" alt="carro-slide 2">
+            </div>
+            <div class="slide">
+              <img src="img/bmw-m3-cupe.avif" alt="carro-slide 3">
+            </div>
+            <div class="slide">
+              <img src="img/alfa-romeo.avif" alt="carro-slide 4">
+            </div>
+            <div class="slide">
+              <img src="img/car-swaper-5.avif" alt="carro-slide 5">
+            </div>
+            <div class="slide">
+              <img src="img/car-swaper-6.avif" alt="carro-slide 6">
+            </div>
+            <!--Slide Image final-->
+  
+            <!--Navigation auto-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+              <div class="auto-btn5"></div>
+              <div class="auto-btn6"></div>
+            </div>
+          </div>
+  
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+          </div>
+        </div>
+      </section>
+
+      <section class="cars-locate">
+        <h3 class="title-locate">Carros para locação</h3>
+        <div class="card-container" >
+          <div class="card" >
+            <div class="card-img">
+              <img src="img/audi-amarela-locate.avif" alt="carro 1">
+            </div>
+            <div class="description-card">
+              <h4>Audi R8 Amarela - <span class="available">Disponível</h4>
+              <p> <span class="price">&dollar; 10.000</span> - 6:30h</p>
+              <p>2 portas</p>
+              <div class="btn-container">
+                <a  href="/cadastro.html">Alugar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="img/car-locate2.avif" alt="carro 2">
+            </div>
+            <div class="description-card">
+              <h4>Ferrari Preta - <span class="available">Disponível</span></h4>
+              <p> <span class="price">&dollar; 70.000 </span>- 24:00h</p>
+              <p>2 portas</p>
+              <div class="btn-container">
+                <a  href="/cadastro.html">Alugar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="img/car-locate.avif" alt="carro 3">
+            </div>
+            <div class="description-card">
+              <h4>Ferrari Sport - <span class=" 
+                unavailable">Indisponível</h4>
+              <p><span class="price">&dollar; 90.000</span> - 3 dias</p>
+              <p>2 portas</p>
+              <div class="btn-container">
+                <a  href="/cadastro.html">Alugar</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Segunda fileira-->
+          <div class="card">
+            <div class="card-img">
+              <img src="img/car-swaper-5.avif" alt="carro 4">
+            </div>
+            <div class="description-card">
+              <h4>Jeep SUV - <span class=" 
+                unavailable">Indisponível</h4>
+              <p><span class="price">&dollar; 40.000</span> - 24:00h</p>
+              <p>4 portas</p>
+              <div class="btn-container">
+                <a  href="cadastro.html">Alugar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="img/ferrari-red.avif" alt="carro 5">
+            </div>
+            <div class="description-card">
+              <h4>Ferrari Vermelha- <span class=" 
+                unavailable">Indisponível</h4>
+              <p><span class="price">&dollar; 70.000</span> - 24:00h</p>
+              <p>2 portas</p>
+              <div class="btn-container">
+                <a  href="cadastro.html">Alugar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="img/bmw-m3-cupe.avif" alt="carro 6">
+            </div>
+            <div class="description-card">
+              <h4>BMW Cupê - <span class=" 
+                available">Disponível</h4>
+              <p><span class="price">&dollar; 30.000</span> - 7:00h</p>
+              <p>2 portas</p>
+              <div class="btn-container">
+                <a  href="cadastro.html">Alugar</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="footer">
+      <div class="address-container">
+        <div class="container-decoration">
+          <h2>Matriz</h2>
+          <p class="text-address">Rua das Ametistas, 123-California-USA</p>
+          <div class="btn-address">
+            <a href="https://maps.app.goo.gl/sZ5Nhua5UoYtod4S8" target="_blank">
+              <i class="fa-solid fa-paper-plane"></i>
+              Rota
+            </a>
+          </div>
+        </div>
+        <div class="container-icons">
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  <script src="js/animations.js"></script>
+  </body>
 </html>

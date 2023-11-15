@@ -1,0 +1,240 @@
+
+.header-swipper {
+    text-align: center;
+    margin: 4rem 0
+}
+
+.header-swipper h2 {
+    font-size: 2rem;
+    font-family: var( --font-text);
+    letter-spacing: 2px;
+    color: var(--color-red);
+}
+
+.header-swipper p {
+    font-size: 1.1rem;
+    margin-top: .4rem;
+    font-family: var(--font-text);
+    letter-spacing: 1px;
+    color: var(--color-blackDark);
+}
+
+/* Section swiper */
+
+.slider {
+    width: 1200px;
+    margin: 0 auto;
+    height: 740px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 1.5s;
+}
+
+.slide img {
+    width: 1200px;
+    border-radius: 10px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 1200px;
+    margin-top: 280px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid var(--colorWhite);
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.manual-btn:hover {
+    background-color: var(--colorWhite);
+}
+
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+ #radio4:checked ~ .first {
+    margin-left: -75%;
+} 
+
+#radio5:checked ~ .first {
+    margin-left: -100%;
+}
+
+#radio6:checked ~ .first {
+    margin-left: -125%; 
+}
+
+.navigation-auto div {
+    border: 2px solid var( --color-navigation);
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 1200px;
+    margin-top: 680px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 1rem;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: var( --color-navigation)
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: var( --color-navigation)
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: var( --color-navigation)
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: var( --color-navigation)
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background-color:var( --color-navigation)
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+    background-color:var( --color-navigation)
+}
+
+
+/*section car-locate*/
+
+.title-locate {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: var(--font-text);
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--color-blackDark)
+}
+
+.cars-locate {
+    margin: 4rem auto;
+    max-width: 1200px;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+
+.card {
+   background-color: var(--color-blackDark);
+   border-radius:12px 12px 0 0;
+}
+
+
+.card-img img {
+    width: 346px;
+    height: auto;
+    border-radius:12px 12px 0 0;
+}
+
+.description-card {
+    padding: 1rem;
+    color: var(--colorWhite);
+}
+
+.description-card h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: var(--font-text);
+    letter-spacing: 2px;
+}
+
+.description-card p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: var(--font-text);
+    padding-top: .5rem;
+}
+
+.price {
+    color: var( --color-green)
+}
+
+.available {
+    font-size: 1rem;
+    color: var( --color-green)
+}
+
+.unavailable {
+    color: var(--color-red);
+    font-size: 1rem;
+}
+
+.btn-container {
+    display: block;
+    margin: 1rem auto .5rem;
+    text-align: center;
+    width: 100%;
+    background-color: var(--colorWhite);
+    padding: .25rem .5rem;
+    border-radius: 8px;
+}
+
+.btn-container a {
+    font-size: 1.2rem;
+    color: var(--color-blackDark);
+    font-family: var(--text-decoration);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-container:hover {
+    opacity: .9;
+}

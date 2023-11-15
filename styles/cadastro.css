@@ -27,7 +27,7 @@ header {
 }
 
 .rigth-side {
-    background-image: url('/img/img-telaCadastro.avif');
+    background-image: url('../img/img-telaCadastro.avif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

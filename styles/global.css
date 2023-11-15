@@ -19,6 +19,14 @@ html {
     overflow-x: hidden;
 }
 
+img {
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
 :root {
     --font-text: 'Roboto', sans-serif;
     --text-decoration: 'Spectral SC', serif;
@@ -27,6 +35,9 @@ html {
     --color-redLigth: #cd3f32;
     --color-blackLigth: #333;
     --color-gray: #ccc;
+    --color-grayLigth: #ddd;
     --color-blackDark: rgb(29, 27, 27);
+    --color-green: green;
+    --color-navigation: #20a6ff;
 }
 

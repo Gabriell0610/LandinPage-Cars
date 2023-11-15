@@ -10,11 +10,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
 }
 
 .nav-items {
     display: flex;
     gap: 2rem;
+    line-height: 35px;
 }
 
 .nav-items a {
@@ -33,10 +35,26 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.hero {
-    height: calc(100vh - 70px);
-
+.icon-container {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorWhite);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
 }
+
+.icon-container a {
+    color: var(--color-blackLigth);
+}
+
+.icon-container a:hover {
+    border: 0;
+}
+
+
 
 /* meni hambruguer para celular */
 .hamburguer {
@@ -84,6 +102,12 @@
         font-size: 1.8rem;
     }
 
+    .icon-container {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
     /* estilos ativos */
     .nav-bar.active .nav-items {
         clip-path: circle(1500px at 90% -15%);
@@ -91,3 +115,7 @@
         z-index: 1;
     }
 }
+
+
+
+

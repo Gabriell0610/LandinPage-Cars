@@ -1,0 +1,184 @@
+.section-parceria {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+.titles {
+    text-align: center;
+}
+
+.titles h2 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    font-family: var(--font-text);
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--color-red);
+}
+
+.titles p {
+    font-size: 1.1rem;
+    font-family: var(--font-text);
+    letter-spacing: 1px;
+}
+
+
+
+/* section-card */
+
+.section-card {
+    margin-bottom: 5rem;
+}
+
+
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-blackDark);
+}
+
+
+.desc-card {
+    color: var(--colorWhite);
+    padding: 1.3rem;
+}
+
+.card-title {
+    font-size: 2.4rem;
+    padding-bottom: .5rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: var(--font-text);
+    color: var(--color-red);
+}
+
+.text-card {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 1.7rem;
+}
+
+.img-card {
+    width: 50%;
+}
+
+@media (max-width: 955px) {
+    .card-container {
+        flex-direction: column-reverse;
+    }
+    .img-card {
+        width: 100%;
+    }
+}
+
+
+/* Section Table */
+.table {
+    max-width: 1300px;
+    margin: 3rem auto;
+}
+
+.form-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 5rem;
+}
+
+.header-title {
+    text-align: center;
+}
+
+.title-table {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding-bottom: .3rem;
+    font-weight: 400;
+    color: var(--color-blackDark);
+    font-family: var(--font-text);
+}
+
+.subtitle-table {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: var(--font-text);
+    color: var(--color-red);
+}
+
+
+.form {
+    width: 500px;
+    margin: 2rem 0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: var(--color-grayLigth)
+}
+
+.line-input {
+    display: grid;
+    margin-bottom: 1rem;
+}
+
+input {
+    padding: .35rem .5rem;
+    margin-top: .2rem;
+    border-radius: 4px;
+    border: 1px solid var(--colo-gray);
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--color-blackDark);
+    font-family: var(--text-decoration);
+}
+
+
+.btn-form {
+    width: 100%;
+    padding: .35rem .5rem;
+    cursor: pointer;
+    background-color: var(--color-red);
+    color: var(--colorWhite);
+    font-family: var(--text-decoration);
+    border: none;
+    font-size: 1rem;
+}
+
+.card-car {
+    background-color: var(--color-blackDark);
+    border-radius: 10px
+}
+
+
+.card-img img {
+    width: 380px;
+    border-radius: 10px 10px 0 0;
+    border: 5px solid var(--color-blackDark);
+}
+
+.description-card {
+    padding: 1rem;
+    color: var(--colorWhite);
+}
+
+.description-card p {
+    font-size: 1.3rem;
+    font-family: var(--font-text);
+    letter-spacing: 1px;
+}
+
+
+.span-decoration {
+    color: var(--color-green);
+    font-family: var(--text-decoration);
+}
+
+

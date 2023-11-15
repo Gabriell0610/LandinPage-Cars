@@ -50,7 +50,7 @@ const cpfRegex = /^(\d{3}\.\d{3}\.\d{3}-\d{2}|\d{11})$/;// Regex para o formato 
 
 const validationCPF = () => {
     if(inputCPF.value === '') {
-        setError(2, 'Campo Vazio') 
+        setError(2, 'Campo vazio') 
     }else if(!cpfRegex.test(inputCPF.value)) {
         setError(2, 'Digite um CPF válido')
     }else {
@@ -61,7 +61,7 @@ const validationCPF = () => {
 
 const validationPassword = () => {
     if(inputPassword.value === '') {
-        setError(3, 'Campo Vazio')
+        setError(3, 'Campo vazio')
     }else if (inputPassword.value.length < 8) {
         setError(3, 'Senha contém menos de 8 caracteres')
     }else {
@@ -70,7 +70,7 @@ const validationPassword = () => {
 }
 
 
-const checkValidations = () => {
+const checkValidations = (e) => {
     validationCPF()
     validationName()
     validationEmail()
@@ -82,10 +82,13 @@ const checkValidations = () => {
             isValid = false
         }
     })
-
+    
     if(isValid) {
         //salvar no banco de dados
-        alert('cadastrado com sucesso')
+        HTMLFormElement.prototype.submit.call(form);
+    }else {
+        e.preventDefault()
+        
     }
 
 }
@@ -98,9 +101,7 @@ inputCPF.addEventListener('input', validationCPF)
 inputPassword.addEventListener('input', validationPassword)
 
 form.addEventListener('submit', (e) =>  {
-  e.preventDefault();
-
-  checkValidations();
+  checkValidations(e);
 
  
 })

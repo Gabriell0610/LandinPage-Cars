@@ -1,11 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles/parceria.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&family=Spectral+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/animations.js" defer></script>
+
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-bar">
+        <div data-aos="fade-right" data-aos-duration="1000">
+          <h1 class="name-logo">Speedy</h1>
+        </div>
+        <button class="hamburguer"></button>
+        <ul class="nav-items">
+          <li><a href="index.html">Sobre nós</a></li>
+          <li><a href="alugueis.html">Alugueis</a></li>
+          <li><a href="parceria.html">Parceria</a></li>
+          <div class="icon-container">
+            <a href="cadastro.html">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-parceria">
+        <div class="titles">
+          <h2>Tem algum carro de luxo parado e quer alugar?</h2>
+          <p>
+            Na Speedy você pode alugar o seu carro com segurança e facilidade!
+          </p>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <div class="card-container" data-aos="fade-up-right"
+        data-aos-duration="1000">
+          <div class="desc-card">
+            <p class="card-title">Como Alugar?</p>
+            <p class="text-card">Para por o seu carro para alugar, é necessário se cadastrar.
+              Depois que se cadastrar, coloque as informações do seu carro no formulário abaixo, junto com o seu nome,
+              cpf e imagem do carro. Após preencher tudo corretamente, basta clicar em enviar para podermos analisar o seu carro
+              e com isso mandaremos uma mensagem em seu email.
+            </p>
+          </div>
+          <img src="img/audi-locate-car2.avif" alt="" class="img-card">
+      </section>
+
+      <section class="table">
+        <div class="header-title">
+          <h3 class="title-table">Preencha os campos</h3>
+          <p class="subtitle-table">Os dados aparecerão no card abaixo, juntamente com a foto do veículo</p>
+        </div>
+        <div class="form-card-container">
+          <div class="form"> 
+            <div class="line-input">
+              <label for="">Nome</label>
+              <input type="text" placeholder="Digite seu nome" id="input-name">
+            </div>
+            <div class="line-input">
+              <label for="">Marca</label>
+              <input type="text" placeholder="Digite a marca do carro" id="input-marca">
+            </div>
+            <div class="line-input">
+              <label for="">Modelo</label>
+              <input type="text" placeholder="Digite seu nome" id="input-modelo">
+            </div>
+            <div class="line-input">
+              <label for="">Placa</label>
+              <input type="text" placeholder="Digite seu nome" id="input-placa">
+            </div>
+            <div class="line-input">
+              <label for="">CPF</label>
+              <input type="text" placeholder="Digite seu CPF" id="input-cpf">
+            </div>
+            <div class="line-input">
+              <label for="">Diponível até que dia?</label>
+              <input type="text" placeholder="Digite os dias" id="input-dias">
+            </div>
+            <button class="btn-form" >Enviar</button>
+          </div>
+
+          <div class="card-car">
+            <div class="card-img">
+              <img src="img/audi-amarela-locate.avif" alt="carro-amarelo" id="img-car">
+            </div>
+            <div class="description-card">
+              <p id="name">Nome: <span class="span-decoration">Gabriel Barbosa</span></p>
+              <p id="marca">Marca: <span class="span-decoration">Audi</span></p>
+              <p id="modelo">Modelo: <span class="span-decoration">R8</span></p>
+              <p id="placa">Placa: <span class="span-decoration">kyj - 9872</span></p>
+              <p id="cpf">CPF: <span class="span-decoration"> 187-765-987.98</span></p>
+              <p id="dias">Disponibilidade: <span class="span-decoration"> 2 semanas</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="address-container">
+        <div class="container-decoration">
+          <h2>Matriz</h2>
+          <p class="text-address">Rua das Ametistas, 123-California-USA</p>
+          <div class="btn-address">
+            <a href="https://maps.app.goo.gl/sZ5Nhua5UoYtod4S8" target="_blank">
+              <i class="fa-solid fa-paper-plane"></i>
+              Rota
+            </a>
+          </div>
+        </div>
+        <div class="container-icons">
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,10 +19,9 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="js/scripts.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="styles/cadastro.css" />
-    <script src="js/validacao.js" defer></script>
+  <script src="js/validacao.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -32,7 +32,7 @@
         </p>
       </header>
       <main>
-          <form action="" class="form">
+          <form action="config.php" method="POST" class="form">
               <div class="input-container">
                 <label class="label" for="">Primeiro Nome:</label>
                 <input
@@ -62,17 +62,18 @@
                 <label class="label" for="">Senha:</label>
                 <input
                   type="password"
-                  name="senha"
+                  name="password"
                   id="input-senha"
                   class="requerid"
                 />
                 <span class="span-requerid"></span>
               </div>
-            <button href="alugueis.html" type="submit" class="btn-form">Cadastra-se</button>
+            <input name="submit" type="submit" class="btn-form"></input>
           </form>
       </main>
     </div>
 
     <div class="rigth-side"></div>
+
   </body>
 </html>
