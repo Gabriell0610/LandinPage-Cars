@@ -42,6 +42,7 @@
 .desc-section{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 1rem;
    
 }
 
@@ -115,6 +116,7 @@
 .section-work {
     max-width: 1200px;
     margin: 5rem auto;
+    padding: 0 1rem;
 }
 
 .desc-work {
@@ -172,26 +174,41 @@
 
 
 /* media */
-@media(max-width: 480px) {
+
+
+@media(min-width: 320px) and (max-width: 480px) {
+    .bg-home::before {
+        height: 35vh;
+    }
+
+
     .bg-home {
-        height: 450px;
+        height: 350px;
     } 
 
-    .bg-home::before {
-        height: 70vh;
+
+    .history-section {
+        margin-top: 3rem;
     }
 
     .title-sobre {
-        font-size: 2.8rem;
+        font-size: 2rem;
+        padding-bottom: 14rem;
     }
 
-    .desc-section {
-        margin-top: 2rem;
+
+    .card-container {
+        flex-direction: column-reverse;
+    }
+
+    .card-img {
+        width: 100%;
     }
 
     .text-containerTwo {
         flex-direction: column;
     }
+
     
 }
 
@@ -208,18 +225,40 @@
         height: 530px;
     } 
 
-    
     .text-containerTwo {
         flex-direction: column;
     }
+
+    .card-container {
+        flex-direction: column-reverse;
+    }
+
+    .card-img {
+        width: 100%;
+    }
+
     
 }
 
 
 @media(min-width: 768px) and (max-width: 991px)  {
+
+    .bg-home::before {
+        height: 50vh;
+    }
     
+    .bg-home {
+        height: 400px;
+    } 
+
+
     .title-sobre {
-        font-size: 3.2rem;
+        font-size: 3.3rem;
+        padding-bottom: 10rem;
+    }
+
+    .history-section {
+        margin: 3.5rem 0;
     }
 
 
@@ -235,6 +274,27 @@
 }
 
 
+@media(min-width: 992px) and (max-width: 1199px) {
+    .bg-home::before {
+        height: 90vh;
+    }
+    
+    .bg-home {
+        height: 600px;
+    } 
+
+}
+
+
+@media(max-width: 1920px) {
+    .bg-home::before {
+        height: 80vh;
+    }
+    
+    .bg-home {
+        height: 750px;
+    } 
+}
 
 
 
