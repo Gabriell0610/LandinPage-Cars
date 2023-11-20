@@ -73,13 +73,14 @@
 }
 
 
-@media (max-width:480px) {
+@media (min-width:320px) and (max-width:480px) {
+
     .footer {
-        padding: 1rem 3rem;
+        padding: 1rem 
     }
 
     .address-container {
-        width: 300px;
+        width: 240px;
         margin: 0 auto;
         flex-direction: column;
     }

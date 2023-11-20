@@ -78,8 +78,12 @@
 }
 
 
-
 @media (max-width: 750px) {
+
+    body {
+        overflow: hidden;
+    }
+
     .hamburguer {
         display: block;
         z-index: 2;
