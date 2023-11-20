@@ -3,7 +3,7 @@
 
 .bg-home {
     position: relative;
-    height: 600px;
+    height: 550px;
 }
 
 .bg-home::before {
@@ -40,7 +40,7 @@
 
 .desc-section{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 4rem auto;
     padding: 1rem;
    
 }
@@ -50,6 +50,7 @@
     font-size: 1.5rem;
     font-family: var(--text-decoration);
     padding: 0 1rem;
+    margin-bottom: 1rem;
 }
 
 .text-container {
@@ -177,16 +178,16 @@
 @media (min-width: 320px) and (max-width: 480px) {
 
     .bg-home::before {
-        height: 45vh
+        height: 30vh
     }
 
     .bg-home {
-        height: 350px;
+        height: 200px;
     }
 
     .title-sobre {
         font-size: 1.6rem;
-        height: 45vh;
+        height: 30vh;
     }
 
     .text-sobre {
@@ -220,7 +221,6 @@
 
 
 
-
 @media (min-width: 481px) and (max-width: 767px)  {
 
     .bg-home::before {
@@ -228,13 +228,14 @@
     }
 
     .bg-home {
-        height: 350px;
+        height: 300px;
     }
 
     .title-sobre {
         font-size: 2.4rem;
         height: 45vh;
     }
+
 
     .card-container {
         flex-direction: column-reverse;
@@ -262,16 +263,21 @@
 @media (min-width: 768px) and (max-width: 991px)   {
 
     .bg-home::before {
-        height: 60vh
+        height: 40vh
     }
 
     .bg-home {
         height: 450px;
     }
 
+    .desc-section {
+        margin: 2rem 0;
+    }
+
+
     .title-sobre {
-        font-size: 2.9rem;
-        height: 60vh;
+        font-size: 3rem;
+        height: 40vh;
     }
 
     .card-container {
@@ -295,159 +301,51 @@
 }
 
 
+/* @media(min-width: 992px) and (max-width: 1199px)  {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media(max-width: 480px) {
     .bg-home::before {
-        height: 50vh;
-        overflow-x: hidden;
+        height: 80vh
     }
-    
+
     .bg-home {
-        height: 430px;
-    } 
-
-    .bg-container {
-        height: 70vh;
+        height: 650px;
     }
 
-    .history-section {
-        margin-top: 3rem;
+    .desc-section {
+        margin: 2rem auto;
     }
 
     .title-sobre {
-        font-size: 2rem;
-    }
-
-
-    .card-container {
-        flex-direction: column-reverse;
-    }
-
-    .card-img {
-        width: 100%;
-    }
-
-    .text-containerTwo {
-        flex-direction: column;
-    }
-
-    
-}
-
-@media(min-width: 481px) and (max-width: 767px) {
-    .title-sobre {
-        font-size: 2.5rem;
-    }
-
-    .bg-home::before {
-        height: 70vh;
-    }
-    
-    .bg-home {
-        height: 530px;
-    } 
-
-    .text-containerTwo {
-        flex-direction: column;
-    }
-
-    .card-container {
-        flex-direction: column-reverse;
-    }
-
-    .card-img {
-        width: 100%;
-    }
-
-    
-}
-
-
-@media(min-width: 768px) and (max-width: 991px)  {
-
-    .bg-home::before {
-        height: 38vh;
-    }
-    
-    .bg-home {
-        height: 465px;
-    } 
-
-    .bg-container {
-        height: 55vh;
-    }
-
-
-    .title-sobre {
-        font-size: 3.2rem;
-    }
-
-    .history-section {
-        margin: 3.5rem 0;
-    }
-
-
-    .description {
-        text-align: center;
-    }
-
-    .card-container {
-        flex-direction: column-reverse;
-
-    }
-
-    .card-img {
-        width: 100%;
-    }
-
-}
-
-
-@media(min-width: 992px) and (max-width: 1199px) {
-    .bg-home::before {
-        height: 70vh;
-    }
-    
-    .bg-home {
-        height: 500px;
-    } 
-
-    .bg-container {
+        font-size: 4rem;
         height: 80vh;
     }
-
 }
 
 
-@media(min-width: 1200px) and (max-width: 1920px) {
-    .bg-home::before {
-        height: 80vh;
-    }
-    
-    .bg-home {
-        height: 600px;
-    } 
+@media(min-width: 1300px) and (max-width: 1919px)   {
 
-    .bg-container {
-        height: 100vh;
+    .bg-home::before {
+        height: 80vh
+    }
+
+    .bg-home {
+        height: 750px;
+    }
+
+    .desc-section {
+        margin: 2rem auto;
+    }
+
+    .title-sobre {
+        font-size: 4rem;
+        height: 80vh;
     }
 } */
+
+
+
+
+
 
 
 
