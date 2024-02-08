@@ -22,7 +22,7 @@ O projeto foi a tarefa final da aula de Desevenvolvimento web
 
 ### Notal Alcançada: 10.0 de 10.0
 
-<a href="">Acesse o site aqui</a>
+<a href="https://gabriell0610.github.io/projeto-speedy/">Acesse o site aqui</a>
 
 
 
