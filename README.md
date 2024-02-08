@@ -4,7 +4,7 @@ O projeto foi a tarefa final da aula de Desevenvolvimento web
 <hr>
 
 ### O projeto tinha alguns desafios como:
-✅ 4 páginas funcionais e com coteúdo
+✅ 4 páginas funcionais e com conteúdo
 <br>
 ✅ Uma das páginas tinha que ser apenas de formulário
 <br>
