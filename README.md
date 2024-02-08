@@ -20,7 +20,7 @@ O projeto foi a tarefa final da aula de Desevenvolvimento web
 - XAMP
 <hr>
 
-### Notal Alacançada: 10.0 de 10.0
+### Notal Alcançada: 10.0 de 10.0
 
 <a href="">Acesse o site aqui</a>
 
