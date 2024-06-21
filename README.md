@@ -1,6 +1,6 @@
 ## Projeto Speedy - Faculdade
 Esse projeto simula de forma apenas visual e sem responsividade um site de locação de carros de luxo.
-O projeto foi a tarefa finaldo curso de Desevenvolvimento web
+O projeto foi a tarefa final do curso de Desevenvolvimento web
 <hr>
 
 ### O projeto tinha alguns desafios como:
